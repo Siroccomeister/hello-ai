@@ -103,6 +103,7 @@
 </section>
 
 <!-- 4 — TRUST FIRST -->
+<section>
 <section data-chapter="3 · Trust First">
   <div class="icon small">
     <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
@@ -114,11 +115,37 @@
   <p class="lede">A connector doesn't hand over one file — it hands over
   everything the connected account can reach, for the life of the session.</p>
   <p class="rule">If you're unsure whether something is safe to paste in: don't. Ask first.</p>
+  <p class="lede small">↓ go deeper: connectors you use vs. connectors you build (MCP)</p>
   <aside class="notes">
     Full detail: content/04-privacy/. Walk the three-tier table verbally
     (everyday / builder / engineering — match the data to the tool). This
     is the single most important slide to land clearly and without rushing.
+    Optional: press down for the MCP backup slide only if you feel like
+    developing on it — e.g. someone asks "can we connect our own systems?"
   </aside>
+</section>
+<section data-chapter="3 · Trust First — go deeper">
+  <h3>MCP — Model Context Protocol</h3>
+  <p class="lede">The Drive/Gmail/Slack connectors in Claude.ai are the
+  ready-made, consumer version of this. <strong>MCP</strong> is the open
+  standard underneath — the same mechanism, but for connecting an AI to
+  <em>any</em> system, including ones nobody has pre-built a connector for.</p>
+  <div class="ladder">
+    <div class="rung"><strong>Generic</strong><span>Pre-built connectors — Drive, Gmail, Calendar — click to authorize, ready today</span></div>
+    <div class="rung"><strong>Custom (MCP)</strong><span>Your own system — a database, an internal API, a deploy tool — someone builds an "MCP server" once, then any MCP-compatible AI can plug into it</span></div>
+  </div>
+  <p class="rule">Same rule applies either way: the connector's scope is
+  whatever the underlying account or credential can reach — a custom MCP
+  server for an internal system needs the same scoping discipline as a
+  Drive connector, not less.</p>
+  <aside class="notes">
+    Backup slide, not core to the 8. This is where Claude Code's MCP
+    servers fit in (content/03-engineer-ai/, content/04-privacy/) — engineers
+    in the room may already know this term; frame it for the non-technical
+    majority as "the technical name for a custom connector to our own
+    systems," not a new concept to learn from scratch.
+  </aside>
+</section>
 </section>
 
 <!-- 5 — THE CHARTER -->

@@ -12,6 +12,7 @@ the slide is the headline, the notes are the talk.
 | 2b *(optional, vertical)* | The Moment — go deeper | Content is now a paid, licensed input | `content/00-why-ai-now/` — press ↓ on slide 2 only if time/questions invite it |
 | 3 | Three Ways In | Ask · Build · Code | `content/01-everyday-ai/`, `02-builder-ai/`, `03-engineer-ai/` |
 | 4 | Trust First | Scope, not secrets | `content/04-privacy/` |
+| 4b *(optional, vertical)* | Trust First — go deeper | MCP — Model Context Protocol | `content/04-privacy/`, `content/03-engineer-ai/` — press ↓ on slide 4 only if you want to develop on custom connectors |
 | 5 | The Charter | Set the rules before you scale | `content/05-enterprise-charter/` |
 | 6 | Run It Like a Project | Mandate → Contract → State → Sprint | `content/06-scoping-and-agent-freedom/`, `content/08-atlas-framework/` |
 | 7 | Stay On Course | Retro or drift | `content/07-drift-and-retros/` |
