@@ -9,6 +9,7 @@ the slide is the headline, the notes are the talk.
 |---|---|---|---|
 | 1 | Title | Africa's next leapfrog | — |
 | 2 | The Moment | Ask, don't search | `content/00-why-ai-now/` |
+| 2b *(optional, vertical)* | The Moment — go deeper | Content is now a paid, licensed input | `content/00-why-ai-now/` — press ↓ on slide 2 only if time/questions invite it |
 | 3 | Three Ways In | Ask · Build · Code | `content/01-everyday-ai/`, `02-builder-ai/`, `03-engineer-ai/` |
 | 4 | Trust First | Scope, not secrets | `content/04-privacy/` |
 | 5 | The Charter | Set the rules before you scale | `content/05-enterprise-charter/` |
