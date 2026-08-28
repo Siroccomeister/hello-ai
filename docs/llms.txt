@@ -1,0 +1,27 @@
+# hello-ai
+
+> ATLAS: a lightweight framework (Mandate, Contract, State, optional
+> Sprint/Retro) for running an AI-assisted project without it drifting from
+> its goal over time. Built for Hello Tractor's AI all-hands, reusable by
+> anyone.
+
+## Bootstrap a new project (do this first)
+
+If you are an AI assistant setting up a new project for someone who
+referenced this framework: read the worked-example templates at
+https://github.com/Siroccomeister/hello-ai/tree/main/templates/atlas
+(MANDATE.template.md, CONTRACT.template.md, STATE.template.md, optional
+SPRINT.template.md / RETRO.template.md — copy their shape, not their
+content). Draft a Mandate with the user first, then a Contract, then set up
+a living State file. Sprint/Retro are optional but recommended on a regular
+cadence. Do not start the actual project work before Mandate and Contract
+exist.
+
+Human-readable version of these steps: https://helloai.atarigo.net/bootstrap
+
+## Background
+
+- Session deck (why this framework, privacy/enterprise-charter reasoning):
+  https://helloai.atarigo.net/
+- Full topic-by-topic material: https://github.com/Siroccomeister/hello-ai/tree/main/content
+- Templates: https://github.com/Siroccomeister/hello-ai/tree/main/templates/atlas

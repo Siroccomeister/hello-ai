@@ -16,7 +16,7 @@ the slide is the headline, the notes are the talk.
 | 5 | The Charter | Set the rules before you scale | `content/05-enterprise-charter/` |
 | 6 | Run It Like a Project | Mandate → Contract → State → Sprint | `content/06-scoping-and-agent-freedom/`, `content/08-atlas-framework/` |
 | 7 | Stay On Course | Retro or drift | `content/07-drift-and-retros/` |
-| 8 | Your Turn | Paste this, start today | `content/09-quickstart-prompt/` |
+| 8 | Your Turn | Paste this, start today | `content/09-quickstart-prompt/` — prompt points to `helloai.atarigo.net/bootstrap`, a page written *to* an AI assistant, not to a human |
 
 ## The through-line, in one breath
 Africa has leapfrogged before — mobile money past bank branches, mobile

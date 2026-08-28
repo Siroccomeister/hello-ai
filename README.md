@@ -8,6 +8,13 @@ projects that stay on-mandate over time.
   reveal.js, built from `docs/index.html`. Deliberately just **8 slides**,
   one keyword idea each — the full script for each is in the slide's
   speaker notes (press `s` while presenting) and in `content/`.
+- **Bootstrap page:** [helloai.atarigo.net/bootstrap](https://helloai.atarigo.net/bootstrap)
+  — a page written *to* an AI assistant rather than a human: fetch it,
+  read the templates it points to, and set up a new ATLAS project. Also
+  published as plain text at
+  [`/llms.txt`](https://helloai.atarigo.net/llms.txt) (the emerging
+  `llms.txt` convention). This is what the closing quickstart prompt
+  actually points at.
 - **The red line:** [`content/DECK-MAP.md`](content/DECK-MAP.md) — maps
   each of the 8 slides to its backing `content/` material and states the
   through-line in one breath.
