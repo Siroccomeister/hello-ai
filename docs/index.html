@@ -124,24 +124,22 @@
 </section>
 <section data-chapter="3 · Trust First — go deeper">
   <h3>MCP — Model Context Protocol</h3>
-  <p class="lede">The Drive/Gmail/Slack connectors in Claude.ai are the
-  ready-made, consumer version of this. <strong>MCP</strong> is the open
-  standard underneath — the same mechanism, but for connecting an AI to
-  <em>any</em> system, including ones nobody has pre-built a connector for.</p>
+  <p class="lede">The ready-made Claude.ai connectors are one version of
+  this. <strong>MCP</strong> is the open standard underneath — for
+  connecting to any system, not just pre-built ones.</p>
   <div class="ladder">
-    <div class="rung"><strong>Generic</strong><span>Pre-built connectors — Drive, Gmail, Calendar — click to authorize, ready today</span></div>
-    <div class="rung"><strong>Custom (MCP)</strong><span>Your own system — a database, an internal API, a deploy tool — someone builds an "MCP server" once, then any MCP-compatible AI can plug into it</span></div>
+    <div class="rung"><strong>Generic</strong><span>Drive, Gmail, Calendar — click to authorize</span></div>
+    <div class="rung"><strong>Custom (MCP)</strong><span>Your own systems — built once, reusable</span></div>
   </div>
-  <p class="rule">Same rule applies either way: the connector's scope is
-  whatever the underlying account or credential can reach — a custom MCP
-  server for an internal system needs the same scoping discipline as a
-  Drive connector, not less.</p>
+  <p class="rule">Same rule either way: scope is whatever the credential can reach.</p>
   <aside class="notes">
     Backup slide, not core to the 8. This is where Claude Code's MCP
     servers fit in (content/03-engineer-ai/, content/04-privacy/) — engineers
     in the room may already know this term; frame it for the non-technical
     majority as "the technical name for a custom connector to our own
-    systems," not a new concept to learn from scratch.
+    systems," not a new concept to learn from scratch. Full detail if asked:
+    a custom MCP server built for e.g. an internal database or deploy tool
+    lets any MCP-compatible AI plug into it, same as Drive/Gmail today.
   </aside>
 </section>
 </section>
