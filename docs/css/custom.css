@@ -9,14 +9,12 @@
 .reveal h1 { font-size: 2.6em; margin-bottom: 0.1em; }
 .reveal h2 { font-size: 2em; color: var(--accent-soft); }
 
-/* chapter breadcrumb, centered above every slide */
+/* chapter breadcrumb, top-left of every slide */
 .reveal .slides section::before {
   content: attr(data-chapter);
   position: absolute;
   top: -0.6em;
   left: 0;
-  right: 0;
-  text-align: center;
   font-size: 0.32em;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -28,19 +26,23 @@
 .icon.small { width: 56px; height: 56px; margin-bottom: 0.5em; }
 .icon svg { display: block; width: 100%; height: 100%; }
 
-.keyword {
+.reveal .keyword {
   color: var(--accent-soft);
   font-size: 1.1em;
   letter-spacing: 0.02em;
   margin-top: 0.2em;
 }
 
-.chapter-sub { opacity: 0.6; font-size: 0.55em; margin-top: 0.8em; }
+.reveal .chapter-sub { opacity: 0.6; font-size: 0.55em; margin-top: 0.8em; }
 
-.lede { font-size: 0.85em; text-align: center; max-width: 26em; margin: 0.4em auto 0.6em; opacity: 0.92; }
-.lede.small { font-size: 0.6em; opacity: 0.75; }
+/* .reveal p sets margin: var(--r-block-margin) 0 (left/right forced to 0,
+   not auto) at higher specificity than a plain class selector — prefixing
+   with .reveal here is required, not decorative, or these stay pinned
+   left instead of centered despite max-width + margin:auto. */
+.reveal .lede { font-size: 0.85em; text-align: center; max-width: 26em; margin: 0.4em auto 0.6em; opacity: 0.92; }
+.reveal .lede.small { font-size: 0.6em; opacity: 0.75; }
 
-.rule {
+.reveal .rule {
   font-size: 0.85em;
   font-weight: 600;
   text-align: center;
