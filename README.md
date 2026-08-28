@@ -5,9 +5,14 @@ all-hands, and a reusable framework (**ATLAS**) for running AI-assisted
 projects that stay on-mandate over time.
 
 - **Session deck:** [helloai.atarigo.net](https://helloai.atarigo.net) —
-  reveal.js, built from `docs/index.html`.
-- **Talk content, in session order:** [`content/`](content/) — why this
-  matters now (adoption shift), everyday chat use, builder tools
+  reveal.js, built from `docs/index.html`. Deliberately just **8 slides**,
+  one keyword idea each — the full script for each is in the slide's
+  speaker notes (press `s` while presenting) and in `content/`.
+- **The red line:** [`content/DECK-MAP.md`](content/DECK-MAP.md) — maps
+  each of the 8 slides to its backing `content/` material and states the
+  through-line in one breath.
+- **Talk content, full depth:** [`content/`](content/) — why this matters
+  now (adoption shift), everyday chat use, builder tools
   (Projects/artifacts/connectors), engineering use (Claude Code), privacy,
   the enterprise AI charter, project scoping/agent freedom, staying on
   track (drift/retros), the ATLAS framework itself, and a closing
