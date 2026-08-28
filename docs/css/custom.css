@@ -9,12 +9,14 @@
 .reveal h1 { font-size: 2.6em; margin-bottom: 0.1em; }
 .reveal h2 { font-size: 2em; color: var(--accent-soft); }
 
-/* chapter breadcrumb, top-left of every slide */
+/* chapter breadcrumb, centered above every slide */
 .reveal .slides section::before {
   content: attr(data-chapter);
   position: absolute;
   top: -0.6em;
   left: 0;
+  right: 0;
+  text-align: center;
   font-size: 0.32em;
   letter-spacing: 0.14em;
   text-transform: uppercase;
