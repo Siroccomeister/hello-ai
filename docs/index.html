@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Hello AI — Hello Tractor All-Hands</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/night.css">
+<link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+
+<section>
+  <h1>Hello AI</h1>
+  <h3>Using AI well, safely, and without drift</h3>
+  <p><small>Hello Tractor All-Hands — Nairobi</small></p>
+</section>
+
+<!-- ===================== 00 WHY NOW ===================== -->
+<section>
+  <section>
+    <h2>Why this matters now</h2>
+    <p>This isn't a niche productivity tool anymore.</p>
+  </section>
+  <section>
+    <h3>You've already changed your own habit</h3>
+    <p>You ask an assistant directly instead of searching and clicking
+    through links. That single shift is why ad-funded search and social
+    platforms are exposed — their business runs on the click and the time
+    spent on <em>their</em> surface. This shift removes both.</p>
+  </section>
+  <section>
+    <h3>Hard fact 1 — the clicks are already gone</h3>
+    <p>Publisher referral traffic from Google is down <strong>roughly a
+    third globally</strong> year-on-year (38% in the US) as AI-generated
+    answers increasingly satisfy the search itself.</p>
+    <p><small>Press Gazette, 2026</small></p>
+  </section>
+  <section>
+    <h3>Hard fact 2 — this is mainstream scale now</h3>
+    <p>ChatGPT alone went from <strong>~400M to ~900M weekly active
+    users</strong> in about a year (early 2025 → Feb 2026), nearing 1B
+    weekly by mid-2026.</p>
+    <p><small>OpenAI / industry reporting, Aug 2026</small></p>
+  </section>
+  <section>
+    <h3>Hard fact 3 — content is now a licensed input</h3>
+    <p>AI content-licensing deals with publishers: <strong>0 in 2022 → 28 in
+    2024 → 36+ projected in 2026.</strong> OpenAI alone has signed with
+    Axios, The Guardian, The Washington Post; Google's first was the AP.</p>
+    <p><small>Digiday, 2025–26 deal timeline</small></p>
+  </section>
+  <section>
+    <h3>Same shift, two sides</h3>
+    <p class="fragment">Real threat to ad-funded incumbents (Google, Meta).</p>
+    <p class="fragment"><strong>Real capability upgrade for an enterprise —
+    if it prepares.</strong></p>
+  </section>
+</section>
+
+<section>
+  <h2>Three tiers, one thread</h2>
+  <ol>
+    <li>Everyday AI — chat queries</li>
+    <li>Builder AI — Projects, artifacts, connectors</li>
+    <li>Engineering AI — Claude Code, real repos</li>
+  </ol>
+  <p class="fragment">Privacy runs through all three — not a slide at the end.</p>
+</section>
+
+<!-- ===================== TIER 1 ===================== -->
+<section>
+  <section>
+    <h2>Tier 1 — Everyday AI</h2>
+    <p>claude.ai, Gemini — no setup required</p>
+  </section>
+  <section>
+    <h3>Good at / bad at</h3>
+    <ul>
+      <li class="fragment">Good: drafting, summarizing, explaining, first-pass analysis</li>
+      <li class="fragment">Bad: current facts it wasn't told, precise math, sounding confident while wrong</li>
+    </ul>
+  </section>
+  <section>
+    <h3>A good query has three parts</h3>
+    <p><strong>Context</strong> — what's this for<br>
+       <strong>Ask</strong> — specifically what you want<br>
+       <strong>Format</strong> — bullets? memo? table?</p>
+  </section>
+  <section>
+    <h3>Iterate, don't restart</h3>
+    <p>Correct in the same conversation — the model already has the context.</p>
+  </section>
+  <section>
+    <h3>Demo</h3>
+    <p>Bad prompt vs. good prompt, same real HT task.</p>
+  </section>
+</section>
+
+<!-- ===================== TIER 2 ===================== -->
+<section>
+  <section>
+    <h2>Tier 2 — Builder AI</h2>
+    <p>Projects, artifacts, connectors</p>
+  </section>
+  <section>
+    <h3>Projects</h3>
+    <p>A persistent workspace with its own instructions and files — stop
+    re-pasting the same background every conversation.</p>
+  </section>
+  <section>
+    <h3>Artifacts</h3>
+    <p>When the output <em>is</em> the thing — a doc, a chart, a small tool —
+    not just an answer in a chat window.</p>
+  </section>
+  <section>
+    <h3>Connectors — the important one</h3>
+    <p class="fragment">A connector doesn't hand over one file.</p>
+    <p class="fragment"><strong>It hands over everything the connected account can reach.</strong></p>
+  </section>
+  <section>
+    <h3>Demo</h3>
+    <p>Build a small Project live; show a connector's access scope before connecting it.</p>
+  </section>
+</section>
+
+<!-- ===================== TIER 3 ===================== -->
+<section>
+  <section>
+    <h2>Tier 3 — Engineering AI</h2>
+    <p>Claude Code, real repos</p>
+  </section>
+  <section>
+    <h3>It operates on the real thing</h3>
+    <p>Real files, real commands, real diffs. Multi-step work end to end —
+    review before approving anything destructive or shared.</p>
+  </section>
+  <section>
+    <h3>CLAUDE.md</h3>
+    <p>Onboard it like a new hire: conventions, architecture, danger zones —
+    not a documentation dump.</p>
+  </section>
+  <section>
+    <h3>Trust but verify</h3>
+    <p>An agent's summary describes what it <em>attempted</em>. Check the
+    actual diff before calling it done — same as reviewing a PR.</p>
+  </section>
+  <section>
+    <h3>Demo</h3>
+    <p>Real fix in an HT repo: CLAUDE.md → prompt → diff review → tests → commit.</p>
+  </section>
+</section>
+
+<!-- ===================== PRIVACY ===================== -->
+<section>
+  <section>
+    <h2>Privacy — the thread through everything</h2>
+  </section>
+  <section>
+    <h3>Match the data to the tier</h3>
+    <table>
+      <tr><th>Tier</th><th>Tool</th><th>Safe to include</th></tr>
+      <tr><td>Everyday</td><td>claude.ai / Gemini</td><td>Shared-team-doc level. No customer/employee specifics.</td></tr>
+      <tr><td>Builder</td><td>Projects + connectors</td><td>Whatever the connected account can already see — no more.</td></tr>
+      <tr><td>Engineering</td><td>Claude Code / MCP</td><td>Whatever the repo already trusts a local engineer with.</td></tr>
+    </table>
+  </section>
+  <section>
+    <h3>The connector mistake</h3>
+    <p>Treating a connector like a single file upload. It's a standing grant
+    for the life of the session. Fix: know the scope before you connect.</p>
+  </section>
+  <section>
+    <h3>If unsure</h3>
+    <p>Don't paste it. Ask first.</p>
+  </section>
+</section>
+
+<!-- ===================== ENTERPRISE CHARTER ===================== -->
+<section>
+  <section>
+    <h2>The enterprise AI charter</h2>
+    <p>Adoption is easy to start. Getting it wrong is easy to do quietly.</p>
+  </section>
+  <section>
+    <h3>Where we probably stand today</h3>
+    <p>No company-wide plan, no admin console, no written policy — normal
+    for a startup. People already using AI (some of you, on Claude) are
+    doing it on <strong>personal accounts</strong>, so whatever that
+    vendor's consumer defaults are already apply, with zero company
+    visibility.</p>
+  </section>
+  <section>
+    <h3>Two toggles to find and turn off</h3>
+    <p><strong>Model training on your content</strong> — often on by default.</p>
+    <p><strong>Indefinite retention</strong> — often on by default.</p>
+    <p class="fragment">These are settings, not personality traits of the tool.</p>
+  </section>
+  <section>
+    <h3>Quotas are real</h3>
+    <p>Heavy users learn fast: chat subscriptions come with usage quotas
+    that a normal workday can burn through.</p>
+  </section>
+  <section>
+    <h3>"Zero data retention" — read the fine print</h3>
+    <p>True ZDR is typically an <strong>API-tier</strong> arrangement — costs
+    more, and is <strong>not automatically granted</strong>. It often exists
+    "on paper" more than as a default every customer gets. Confirm it's
+    actually contracted — don't assume it from a sales page.</p>
+  </section>
+  <section>
+    <h3>What to do this week</h3>
+    <p>A one-page interim guideline beats no guideline: no customer/
+    financial data on personal AI accounts, starting today. Move to a
+    company-owned plan next.</p>
+  </section>
+</section>
+
+<!-- ===================== SCOPING & FREEDOM ===================== -->
+<section>
+  <section>
+    <h2>Scoping a project</h2>
+    <p>How much freedom to give the agent</p>
+  </section>
+  <section>
+    <h3>The rule of thumb</h3>
+    <p><strong>The narrower the scope, the more freedom you can safely give
+    the agent — and the more effective it is.</strong></p>
+  </section>
+  <section>
+    <h3>Step by step</h3>
+    <p>Start narrow, human reviews everything → prove it out → widen the
+    leash deliberately, not all at once.</p>
+  </section>
+</section>
+
+<!-- ===================== DRIFT & RETROS ===================== -->
+<section>
+  <section>
+    <h2>Staying on track</h2>
+    <p>The real risk: losing the goal along the way</p>
+  </section>
+  <section>
+    <h3>Long conversations drift</h3>
+    <p>Even compacted/summarized ones — a conversation that keeps answering
+    "what's the natural next question" will happily walk you down a rabbit
+    hole with nothing to do with your original goal.</p>
+  </section>
+  <section>
+    <h3>The fix is a cadence, not more care</h3>
+    <p>You can't out-focus drift mid-conversation. Force a regular
+    checkpoint: reread the mandate, ask one blunt question —
+    <strong>are we still on track?</strong></p>
+  </section>
+</section>
+
+<!-- ===================== ATLAS ===================== -->
+<section>
+  <section>
+    <h2>ATLAS</h2>
+    <p>Running an AI-assisted <em>project</em>, not just a conversation</p>
+  </section>
+  <section>
+    <h3>Mandate → Contract → State → Sprint</h3>
+    <ul>
+      <li><strong>Mandate</strong> — the fixed goal</li>
+      <li><strong>Contract</strong> — what it must never do, and what it commits to</li>
+      <li><strong>State</strong> — progress, learnings, backlog, live</li>
+      <li><strong>Sprint</strong> — optional, can just be a live session</li>
+      <li><strong>Retro</strong> — the checkpoint that catches drift</li>
+    </ul>
+  </section>
+  <section>
+    <h3>What it stops</h3>
+    <p>Scope wandering toward the last convenient conversation. Connectors
+    attached with no one asking what they expose. Every session re-deriving
+    context from zero. Drift that never gets corrected because there was
+    never a checkpoint.</p>
+  </section>
+  <section>
+    <h3>Start today</h3>
+    <p><code>templates/atlas/</code> in this repo — a worked example, not
+    blank placeholders. Copy it into any project, fill in Mandate and
+    Contract first.</p>
+  </section>
+</section>
+
+<section>
+  <h2>Recap</h2>
+  <ul>
+    <li>The habit shift is real, measurable, and already happening</li>
+    <li>Match your tool to your tier</li>
+    <li>Know what a connector actually exposes — and check the charter toggles</li>
+    <li>Narrow scope earns the agent more freedom</li>
+    <li>Retro on a cadence — don't trust yourself to notice drift live</li>
+  </ul>
+</section>
+
+<!-- ===================== QUICKSTART PROMPT ===================== -->
+<section>
+  <section>
+    <h2>You don't need to remember any of this</h2>
+    <p>You need one prompt.</p>
+  </section>
+  <section>
+    <h3>Paste this, with your own goal</h3>
+    <blockquote style="font-size:0.55em; text-align:left;">
+    I want to start a new project for <strong>[your goal — anything, not
+    a presentation]</strong>. Set it up using the ATLAS framework described
+    at helloai.atarigo.net — Mandate, then Contract, then a living State
+    file, with Sprints optional. Use the worked examples at
+    github.com/Siroccomeister/hello-ai/tree/main/templates/atlas as a model
+    for the shape and level of detail — not the content. Start by drafting
+    the Mandate with me, then the Contract, before we do any actual work.
+    </blockquote>
+  </section>
+  <section>
+    <h3>That's it</h3>
+    <p>Any goal. Field ops, a personal project, a product feature, a
+    campaign. Open your phone, paste it, fill in your goal.</p>
+  </section>
+</section>
+
+<section>
+  <h2>Thank you</h2>
+  <p><small>hello-ai — helloai.atarigo.net</small></p>
+</section>
+
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+<script>
+  Reveal.initialize({ hash: true, slideNumber: true, transition: 'slide' });
+</script>
+</body>
+</html>
