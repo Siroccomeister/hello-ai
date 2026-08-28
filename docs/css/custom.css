@@ -22,9 +22,9 @@
   opacity: 0.85;
 }
 
-.icon { color: var(--accent); margin: 0 auto 0.3em; width: 90px; }
-.icon.small { width: 56px; margin-bottom: 0.5em; }
-.icon svg { width: 100%; height: 100%; }
+.icon { color: var(--accent); margin: 0 auto 0.3em; width: 90px; height: 90px; }
+.icon.small { width: 56px; height: 56px; margin-bottom: 0.5em; }
+.icon svg { display: block; width: 100%; height: 100%; }
 
 .keyword {
   color: var(--accent-soft);
@@ -35,12 +35,13 @@
 
 .chapter-sub { opacity: 0.6; font-size: 0.55em; margin-top: 0.8em; }
 
-.lede { font-size: 0.85em; max-width: 26em; margin: 0.4em auto 0.6em; opacity: 0.92; }
+.lede { font-size: 0.85em; text-align: left; max-width: 26em; margin: 0.4em auto 0.6em; opacity: 0.92; }
 .lede.small { font-size: 0.6em; opacity: 0.75; }
 
 .rule {
   font-size: 0.85em;
   font-weight: 600;
+  text-align: left;
   color: var(--accent-soft);
   border-top: 1px solid rgba(232,161,60,0.4);
   padding-top: 0.5em;
@@ -81,14 +82,19 @@
 }
 .ladder .rung {
   display: flex;
-  align-items: baseline;
+  align-items: flex-start;
   gap: 0.6em;
   text-align: left;
   border-left: 3px solid var(--accent);
   padding-left: 0.6em;
 }
-.ladder .rung strong { color: var(--accent-soft); min-width: 3.2em; font-size: 0.8em; }
-.ladder .rung span { font-size: 0.55em; opacity: 0.85; }
+.ladder .rung strong {
+  flex: 0 0 5.5em;
+  color: var(--accent-soft);
+  font-size: 0.8em;
+  padding-top: 0.15em;
+}
+.ladder .rung span { flex: 1; text-align: left; font-size: 0.55em; opacity: 0.85; }
 
 .reveal blockquote {
   font-size: 0.5em;
